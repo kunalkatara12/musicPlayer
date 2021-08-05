@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body{
+    background-color: aquamarine;
+}
+.Ultra_Main_Div{
+    display: flex;
+}
+.Main_Div {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items:center;
+}
+.Music_Container {
+    width: 45rem;
+    height: 54rem;
+    background-color: orange;
+    border-radius: 9rem;
+  box-shadow: 0 1.2rem 3rem 0.5rem rgb(41, 35, 35);
+  padding: 3rem;
+  text-align: center;
+}
+.Music_Container #title{
+    color: rgb(109, 255, 11);
+    margin: 2rem 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 4rem black;
+}
+.Music_Container #artist{
+    color: rgb(109, 255, 11);
+    margin: 2rem 0 0.5rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 0.5rem black;
+}
+.Img_Container{
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1.2rem 3rem 0.5rem black;
+    
+}
+.Btn_Container{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 5rem;
+}
+.Btn_Container.fas{ 
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem black);
+}
+.Btn_Container .fas:hover{
+    color: gray;
+    cursor: pointer;
+}
+.Btn_Container .play_btn{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color:black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.Btn_Container .fa-play:hover
+{
+    background-color: #f6f6f6;
+    color: #111;
+    box-shadow: 0 1rem 2rem 0.2rem black ;
+}
+.Btn_Container .fa-pause:hover
+{
+    background-color: #f6f6f6;
+    color: #111;
+    box-shadow: 0 1rem 2rem 0.2rem black ;
+}
+.animation{
+  animation: rotatePlayer 3s linear  infinite;
+}
+@keyframes rotatePlayer {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+
+.Play-List_Div{
+  margin:40px 40px 0px 40px;
+  width: 92rem;
+  height: 55rem;
+  background-color: orange;
+  box-shadow: 0 1.2rem 3rem 0.5rem rgb(41, 35, 35);
+  padding: 3rem;
+}
+.Play-List_Div h2{
+    text-align: center;
+    font-size:34px;
+    background-color: indigo;
+    color: white;
+    border-radius: 50%;
+    margin: -50px -20px 0px -20px;
+}
+.playlist_item{
+    width: 100%;
+    height:106%;
+    background-color: rgb(235, 211, 80);
+}
+@media screen and (max-width: 974px){
+    .Ultra_Main_Div{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .Music_Container {
+        width: 40rem;
+        height: 54rem;
+        background-color: orange;
+        border-radius: 9rem;
+      box-shadow: 0 1.2rem 3rem 0.5rem rgb(41, 35, 35);
+      align-content: center;
+      padding: 3rem ;
+      margin-left: 79px;
+    }
+    .Play-List_Div{
+        width: 56rem;
+        height: 55rem;
+        background-color: orange;
+        box-shadow: 0 1.2rem 3rem 0.5rem rgb(41, 35, 35);
+        padding: 3rem;
+        align-content: center;
+      }
+    
+}
+.ordered_list{
+  font-size:20px;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  justify-content:space-between; 
+}
+
+.list{
+    display: flex;
+    flex-direction:row;  
+    justify-content:space-between; 
+}
+/* .list .play_btn_list:hover{
+   cursor: pointer;
+}
+.list .fa-play :hover{ 
+    background-color: #f6f6f6;
+    color: #111;
+    box-shadow: 0 1rem 2rem 0.2rem black ;
+} */
+.fa-play-circle{
+    cursor: pointer;
+    width: 50px;
+}
