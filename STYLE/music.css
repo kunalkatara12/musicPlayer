@@ -7,16 +7,26 @@ html {
   font-size: 62.5%;
 }
 body{
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 680px;
+        width: 400px; */
     background-color: aquamarine;
 }
 .Ultra_Main_Div{
     display: flex;
+    /* justify-content: center; */
+    align-items: center;
 }
 .Main_Div {
   width: 100vw;
   height: 100vh;
-  display: grid;
-  place-items:center;
+display: flex;
+justify-content: center;
+align-items: center;
+  /* display: grid;
+  place-items:center; */
 }
 .Music_Container {
     width: 45rem;
@@ -102,14 +112,23 @@ img{
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
 }
-
+.playlistDiv{
+    margin: 40px;;
+    width: 70rem;
+    height: 55rem;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 .Play-List_Div{
   margin:40px 40px 0px 40px;
-  width: 92rem;
+  width: 60rem;
   height: 55rem;
   background-color: orange;
   box-shadow: 0 1.2rem 3rem 0.5rem rgb(41, 35, 35);
   padding: 3rem;
+  border-radius: 20px;
 }
 .Play-List_Div h2{
     text-align: center;
@@ -139,6 +158,13 @@ img{
       align-content: center;
       padding: 3rem ;
       margin-left: 79px;
+    }
+    .playlistDiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 55rem;
     }
     .Play-List_Div{
         width: 56rem;
