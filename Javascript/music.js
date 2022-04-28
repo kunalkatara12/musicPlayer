@@ -49,7 +49,7 @@ const songs=[{
 const loadSong=(songs)=>{
     title.textContent=songs.title;
     artist.textContent=songs.artist;
-    music.src="../music_player Latest/Others/"+songs.title+".mp3"
+    music.src="Others/"+songs.title+".mp3"
 }
 songIdx=0
 const nextSong=()=>{
